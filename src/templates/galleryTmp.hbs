@@ -1,0 +1,15 @@
+{{#each this}}
+
+<li class='card' data-action={{id}}>
+  <img class='card__img' src={{images.[5].url}} alt='event image' />
+  <h2 class='card__title little-line'>{{name}}</h2>
+  <p class='card__date'>{{dates.start.localDate}}</p>
+  <p class="card__location ">
+    <a class="link card__adress little-line" target="_blank" href="{{_embedded.venues.[0].url}}">
+      <span class="material-icons white600">place</span>
+      {{_embedded.venues.[0].name}}
+    </a>
+  </p>
+</li>
+
+{{/each}}

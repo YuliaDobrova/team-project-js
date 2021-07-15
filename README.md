@@ -1,1 +1,1 @@
-# team-project-js
+# team-project-events

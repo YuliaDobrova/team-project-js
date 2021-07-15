@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+  background-image: url(../images/back-ground-image/bg-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  overflow: initial;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/back-ground-image/bg-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/back-ground-image/bg-tablet@1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/back-ground-image/bg-tablet@2x.png);
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/back-ground-image/bg-desktop@1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/back-ground-image/bg-desktop@2x.png);
+      }
+    }
+  }
+}
+
+.no-scroll {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
